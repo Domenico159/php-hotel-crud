@@ -11,10 +11,10 @@ require_once __DIR__ . '/partials/script/get_rooms.php';
 require_once  __DIR__  . '/partials/template/head.php';
 ?>
 
-<body class="d-flex align-items-center flex-column">
+<body class="d-flex align-items-center flex-column" style="background-color: #e6f9ff;">
 
     <header class="d-flex align-items-center flex-column">
-        <h1>Hotel Zummo</h1>
+        <h1 style="font-family:cursive">Hotel Zummo</h1>
         <h2 class="mt-2">Archivio stanze</h2>
     </header>
     <main class="d-flex jusstify-content-center align-items-center flex-wrap container">
@@ -23,7 +23,7 @@ require_once  __DIR__  . '/partials/template/head.php';
         if (!empty($rooms)) {
             foreach ($rooms as $room) { ?>
 
-                <div class="card show-room" style="width: calc(100% / 4 - 40px); margin:40px 20px;">
+                <div class="card show-room" style="width: calc(100% / 4 - 40px); margin:40px 20px; cursor:pointer;">
                     <img src="<?php if ($room['beds'] == 1) {
                                     echo 'https://www.hotelvischi.it/files/appartamenti/1/SINGOGOLA%20COPERTINA.JPG';
                                 } elseif ($room['beds'] == 2) {

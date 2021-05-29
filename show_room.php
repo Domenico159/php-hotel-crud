@@ -10,9 +10,9 @@ require_once __DIR__ . '/partials/script/get_room.php';
 require_once  __DIR__  . '/partials/template/head.php';
 ?>
 
-<body class="d-flex align-items-center flex-column pb-5 pt-2">
+<body class="d-flex align-items-center flex-column pb-5 pt-2" style="background-color: #e6f9ff;">
 
-    <header class="d-flex align-items-center flex-column">
+    <header class=" d-flex align-items-center flex-column">
         <h1 class="card-title text-danger">
             <?php if ($room_selected['beds'] == 1) {
                 echo 'Stanza Singola';
