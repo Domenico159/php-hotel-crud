@@ -11,6 +11,16 @@ require_once __DIR__ . '/partials/script/get_rooms.php';
 require_once  __DIR__  . '/partials/template/head.php';
 ?>
 
+<style type="text/css">
+    .card {
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+</style>
+
 <body class="d-flex align-items-center flex-column" style="background-color: #e6f9ff;">
 
     <header class="d-flex align-items-center flex-column">
