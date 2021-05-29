@@ -23,7 +23,7 @@ require_once  __DIR__  . '/partials/template/head.php';
         if (!empty($rooms)) {
             foreach ($rooms as $room) { ?>
 
-                <div class="card" style="width: calc(100% / 4 - 40px); margin:40px 20px;">
+                <div class="card show-room" style="width: calc(100% / 4 - 40px); margin:40px 20px;">
                     <img src="<?php if ($room['beds'] == 1) {
                                     echo 'https://www.hotelvischi.it/files/appartamenti/1/SINGOGOLA%20COPERTINA.JPG';
                                 } elseif ($room['beds'] == 2) {
@@ -42,7 +42,7 @@ require_once  __DIR__  . '/partials/template/head.php';
                             }  ?></h5>
                         <h5> Stanza numero : <?php echo $room['room_number'] ?> </h5>
                         <h5>Piano : <?php echo $room['floor'];  ?></h5>
-                        <a href="#" class="btn btn-primary " style="margin-left:100px;">INFO</a>
+                        <a href="./show_room.php?id=<?php echo $room['id']; ?>" target="_blank" class="btn btn-primary " style="margin-left:100px;">INFO</a>
                     </div>
                 </div>
 
