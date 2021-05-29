@@ -32,14 +32,14 @@ require_once  __DIR__  . '/partials/template/head.php';
                                     echo 'https://www.medjugorjehotelspa.com/wp-content/uploads/2016/12/D8E0160-copy.jpeg';
                                 }  ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">
+                        <h3 class="card-title">
                             <?php if ($room['beds'] == 1) {
                                 echo 'Stanza Singola';
                             } elseif ($room['beds'] == 2) {
                                 echo 'Stanza Doppia';
                             } else {
                                 echo 'Stanza Tripla';
-                            }  ?></h5>
+                            }  ?></h3>
                         <h5> Stanza numero : <?php echo $room['room_number'] ?> </h5>
                         <h5>Piano : <?php echo $room['floor'];  ?></h5>
                         <a href="./show_room.php?id=<?php echo $room['id']; ?>" target="_blank" class="btn btn-primary " style="margin-left:100px;">INFO</a>
